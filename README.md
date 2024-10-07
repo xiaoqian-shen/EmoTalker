@@ -4,6 +4,6 @@
 
 <div style="display: flex; flex-direction: row;">
   <div style="flex: 1;">
-    <img src="assets/emotalker.gif" alt="First GIF" style="width: 300pt;">
+    <img src="assets/emotalker.gif" alt="First GIF" style="width: 600pt;">
   </div>
 </div>
