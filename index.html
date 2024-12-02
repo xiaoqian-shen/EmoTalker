@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="DESCRIPTION META TAG">
+    <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+    <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+    <meta property="og:url" content="URL OF THE WEBSITE"/>
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/your_banner_image.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+
+
+    <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>EmoTalker</title>
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title">EmoTalker: Audio Driven Emotion Aware Talking Head
+                        Generation</h1>
+                    <div class="is-size-5 publication-authors">
+                        <!-- Paper authors -->
+                                     <span class="author-block">
+                                        <a href="https://xiaoqian-shen.github.io" target="_blank">Xiaoqian Shen</a>,</span>
+                                       <span class="author-block">
+                                         <a href="https://faixan-khan.github.io" target="_blank">Faizan Farooq Khan</a>,</span>
+                                         <span class="author-block">
+                                            <a href="https://www.mohamed-elhoseiny.com/" target="_blank">Mohamed Elhoseiny</a>
+                                         </span>
+                    </div>
+
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block">King Abdullah University of Science and Technology (KAUST), Saudi Arabia<br>ACCV 2024
+                        </span>
+                            <!--                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>-->
+                        </div>
+
+
+                    <div class="column has-text-centered">
+                        <!--                    <div class="publication-links">-->
+                        <!--                         &lt;!&ndash; Arxiv PDF link &ndash;&gt;-->
+                        <!--                      <span class="link-block">-->
+                        <!--                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"-->
+                        <!--                        class="external-link button is-normal is-rounded is-dark">-->
+                        <!--                        <span class="icon">-->
+                        <!--                          <i class="fas fa-file-pdf"></i>-->
+                        <!--                        </span>-->
+                        <!--                        <span>Paper</span>-->
+                        <!--                      </a>-->
+                        <!--                    </span>-->
+
+                        <!-- Supplementary PDF link -->
+                        <!--                    <span class="link-block">-->
+                        <!--                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"-->
+                        <!--                      class="external-link button is-normal is-rounded is-dark">-->
+                        <!--                      <span class="icon">-->
+                        <!--                        <i class="fas fa-file-pdf"></i>-->
+                        <!--                      </span>-->
+                        <!--                      <span>Supplementary</span>-->
+                        <!--                    </a>-->
+                        <!--                  </span>-->
+
+                        <!-- Github link -->
+                        <span class="link-block">
+                    <a href="https://github.com/xiaoqian-shen/EmoTalker" target="_blank"
+                       class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                        <!-- ArXiv abstract Link -->
+                        <!--                <span class="link-block">-->
+                        <!--                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"-->
+                        <!--                  class="external-link button is-normal is-rounded is-dark">-->
+                        <!--                  <span class="icon">-->
+                        <!--                    <i class="ai ai-arxiv"></i>-->
+                        <!--                  </span>-->
+                        <!--                  <span>arXiv</span>-->
+                        <!--                </a>-->
+                        <!--              </span>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+<!-- Teaser video-->
+<!--<section class="hero teaser">-->
+<!--  <div class="container is-max-desktop">-->
+<!--    <div class="hero-body">-->
+<!--      <video poster="" id="tree" autoplay controls muted loop height="100%">-->
+<!--        &lt;!&ndash; Your video here &ndash;&gt;-->
+<!--        <source src="static/videos/banner_video.mp4"-->
+<!--        type="video/mp4">-->
+<!--      </video>-->
+<!--      <h2 class="subtitle has-text-centered">-->
+<!--        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. -->
+<!--      </h2>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Talking head synthesis aims to create videos of a person speaking with accurately synchronized
+                        lip movements and natural facial expressions that correspond to the driving audio. However,
+                        previous approaches have used reference frames or extra labels to control emotions and facial
+                        expressions, which disentangle utterance and expression and ignore the impact of audio
+                        fluctuations on face motions, e.g., head pose, facial expressions and emotions.
+                        In this work, we present <strong>EmoTalker</strong>, which generates arbitrary identities with
+                        diverse
+                        and natural facial expressions from audio, without relying on driving frames or emotion labels
+                        as input.
+                        To achieve this, we present frames as a sequence of 3D motion coefficients of 3DMM
+                        representation and separate them into lip-related coefficients and the remaining (head pose,
+                        expressions) as facial motions. To model lip movement, we start from a pre-trained audio encoder
+                        and map it to corresponding lip representation. While for facial motions, we employ a two-stage
+                        training strategy: 1) We first project facial motions into a finite space of the codebook
+                        embedded with emotion-aware facial expression priors. 2) Moreover, a cross-modal Transformer is
+                        devised to explicitly model the correlations between audio and different types of facial
+                        motions. Experimental results and user studies show our model achieves state-of-the-art
+                        performance on the emotional audio-visual dataset and produces more realistic talking head
+                        videos with synchronized lip movement and vivid facial expressions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End paper abstract -->
+
+<section class="section hero is-light">
+    <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+            <h2 class="title is-3">SoTA Comparison</h2>
+            <div style="text-align: center;">
+                <table align="center">
+                    <tr>
+                        <td>
+                            <img src="https://emotalker.s3.amazonaws.com/webpage/neutral/M003.jpg" width="190"
+                                 alt="Image Description">
+                            <p>Neutral identity reference
+                            <p>
+                        </td>
+                        <td style="padding-left: 10pt">
+                            <br><br><br>
+                            <p>
+                            <h2 class="title is-2">+</h2>
+                            <p>
+                        </td>
+                        <td style="padding-left: 10pt">
+                            <p style="margin-top: 20px;">
+                            <p>
+                            <h2 class="title is-5">Same speech content:</h2>
+                            <p>
+                            <p>
+                            <h2 class="title is-6">"The revolution now under</h2>
+                            <p>
+                            <p>
+                            <h2 class="title is-6">way in materials handling</h2>
+                            <p>
+                            <p>
+                            <h2 class="title is-6">makes this much easier"</h2>
+                            <p>
+                        </td>
+                        <td style="padding-left: 10pt">
+                            <br><br><br>
+                            <p>
+                            <h2 class="title is-2">+</h2>
+                            <p>
+                        </td>
+                        <td style="padding-left: 10pt">
+                            <p style="margin-top: 83px;">
+                            <p>
+                            <h2 class="title is-5">Different audio cadence</h2>
+                            <p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+
+            <div style="text-align: center;">
+                <table align="center">
+                    <tr>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/wav2lip/M003-angry-level_1-030.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/wav2lip/M003-contempt-level_2-029.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/wav2lip/M003-fear-level_1-030.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/wav2lip/M003-happy-level_2-030.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/wav2lip/M003-sad-level_3-030.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                    </tr>
+                </table>
+                <h3 class="title is-5">Wav2Lip</h3>
+            </div>
+            <br>
+
+            <div style="text-align: center;">
+                <table align="center">
+                    <tr>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/makeittalk/M003-angry-level_1-030.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/makeittalk/M003-contempt-level_2-029.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/makeittalk/M003-fear-level_1-030.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/makeittalk/M003-happy-level_2-030.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/makeittalk/M003-sad-level_3-030.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                    </tr>
+                </table>
+                <h3 class="title is-5">MakeItTalk</h3>
+            </div>
+            <br>
+
+            <div style="text-align: center;">
+                <table align="center">
+                    <tr>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/audio2head/M003-angry-level_1-030.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/audio2head/M003-contempt-level_2-029.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/audio2head/M003-fear-level_1-030.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/audio2head/M003-happy-level_2-030.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/audio2head/M003-sad-level_3-030.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                    </tr>
+                </table>
+                <h3 class="title is-5">Audio2Head</h3>
+            </div>
+            <br>
+
+            <div style="text-align: center;">
+                <table align="center">
+                    <tr>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/sadtalker/M003-angry-level_1-030.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/sadtalker/M003-contempt-level_2-029.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/sadtalker/M003-fear-level_1-030.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/sadtalker/M003-happy-level_2-030.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/sadtalker/M003-sad-level_3-030.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                    </tr>
+                </table>
+                <h3 class="title is-5">SadTalker</h3>
+            </div>
+            <br>
+            <div style="text-align: center;">
+                <table align="center">
+                    <tr>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/eamm/M003-angry-level_1-030.mov"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/eamm/M003-contempt-level_2-029.mov"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/eamm/M003-fear-level_1-030.mov"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/eamm/M003-happy-level_2-030.mov"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/eamm/M003-sad-level_3-030.mov"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                    </tr>
+                </table>
+                <h3 class="title is-5">EAMM</h3>
+            </div>
+            <br>
+            <div style="text-align: center;">
+                <table align="center">
+                    <tr>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/emotalker/M003-angry-level_1-030.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/emotalker/M003-contempt-level_2-029.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/emotalker/M003-fear-level_1-030.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/emotalker/M003-happy-level_2-030.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/same-content/emotalker/M003-sad-level_3-030.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                        </td>
+                    </tr>
+                </table>
+                <h3 class="title is-5">EmoTalker (ours)</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Video carousel -->
+<section class="section hero is-light">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Emotional Videos</h2>
+                    <h4 class="title is-5">Enhanced with GFPGAN from 256<sup>2</sup> to 512<sup>2</sup></h4>
+                    <div class="columns is-centered has-text-centered">
+                        <div id="results-carousel" class="carousel results-carousel"
+                             style="width: 1200px; height: 300px">
+                            <div class="item item-video1">
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/M011-fear-level_1-028_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/M003-angry-level_1-019_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/M012-happy-level_2-026_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                            </div>
+                            <div class="item item-video1">
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/M007-surprised-level_1-028_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/M013-contempt-level_1-027_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/M011-sad-level_3-026_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                            </div>
+                            <div class="item item-video1">
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/M011-contempt-level_2-030_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/M007-happy-level_1-029_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/M029-angry-level_3-024_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="columns is-centered has-text-centered">
+                        <div id="results-carousel-1" class="carousel results-carousel"
+                             style="width: 1200px; height: 300px">
+                            <div class="item item-video1">
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/M030-happy-level_3-027_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/M003-sad-level_1-020_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/M011-angry-level_1-029_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                            </div>
+                            <div class="item item-video1">
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/M009-surprised-level_3-008_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/M003-angry-level_2-015_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/M011-fear-level_1-020_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                            </div>
+                            <div class="item item-video1">
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/M009-disgusted-level_2-016_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/M011-sad-level_2-019_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/M012-contempt-level_1-018_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="columns is-centered has-text-centered">
+                        <div id="results-carousel-1" class="carousel results-carousel"
+                             style="width: 1200px; height: 300px">
+                            <div class="item item-video1">
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/W015-fear-level_1-013_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/W026-sad-level_1-022_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/W028-surprised-level_1-058_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                            </div>
+                            <div class="item item-video1">
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/M037-sad-level_2-051_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/M039-sad-level_2-055_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/M040-disgusted-level_3-043_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <div class="columns is-centered has-text-centered">
+                        <div id="results-carousel-1" class="carousel results-carousel"
+                             style="width: 1200px; height: 300px">
+                            <div class="item item-video1">
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/W024-sad-level_1-050_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/W026-happy-level_1-029_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/W016-sad-level_1-021_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                            </div>
+                            <div class="item item-video1">
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/W028-contempt-level_1-055_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/W019-sad-level_3-021_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                                <video preload="auto"
+                                       src="https://emotalker.s3.amazonaws.com/webpage/high-res/W029-angry-level_1-033_enhanced.mp4"
+                                       type="video/mp4" controls="" width="300"></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section hero is-light">
+    <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+            <h2 class="title is-3">Different emotions and intensities</h2>
+            <div style="text-align: center;">
+                <table align="center">
+                    <tr>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/emotion-level/M003-angry-level_1.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Angry level 1</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/emotion-level/M003-angry-level_2.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Angry level 2</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/emotion-level/M003-angry-level_3.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Angry level 3</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/emotion-level/M003-contempt-level_1.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Contempt level 1</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/emotion-level/M003-contempt-level_2.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Contempt level 2</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/emotion-level/M003-contempt-level_3.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Contempt level 3</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/emotion-level/M003-fear-level_1.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Fear level 1</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/emotion-level/M003-fear-level_2.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Fear level 2</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/emotion-level/M003-fear-level_3.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Fear level 3</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/emotion-level/M003-sad-level_1.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Sad level 1</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/emotion-level/M003-sad-level_2.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Sad level 2</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/emotion-level/M003-sad-level_3.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Sad level 3</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/emotion-level/M003-happy-level_1.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Happy level 1</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/emotion-level/M003-happy-level_2.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Happy level 2</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/emotion-level/M003-happy-level_3.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Happy level 3</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section hero is-light">
+    <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+            <h2 class="title is-3">In the wild generation</h2>
+            <div style="text-align: center;">
+                <table align="center">
+                    <tr>
+                        <td>
+                            <img src="https://emotalker.s3.amazonaws.com/webpage/in-the-wild/id/3.png" width="190"
+                                         alt="Image Description">
+                            <p>Identity reference</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/in-the-wild/gt/3.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Original video</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/in-the-wild/sadtalker/3.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>SadTalker</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/in-the-wild/eamm/3.mov"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>EAMM</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/in-the-wild/ours/3.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Ours</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://emotalker.s3.amazonaws.com/webpage/in-the-wild/id/1.png" width="190"
+                                         alt="Image Description">
+                            <p>Identity reference</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/in-the-wild/gt/1.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Original video</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/in-the-wild/sadtalker/1.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>SadTalker</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/in-the-wild/eamm/1.mov"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>EAMM</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/in-the-wild/ours/1.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Ours</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://emotalker.s3.amazonaws.com/webpage/in-the-wild/id/4.png" width="190"
+                                         alt="Image Description">
+                            <p>Identity reference</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/in-the-wild/gt/4.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Original video</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/in-the-wild/sadtalker/4.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>SadTalker</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/in-the-wild/eamm/4.mov"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>EAMM</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/in-the-wild/ours/4.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Ours</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://emotalker.s3.amazonaws.com/webpage/in-the-wild/id/5.png" width="190"
+                                         alt="Image Description">
+                            <p>Identity reference</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/in-the-wild/gt/5.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Original video</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/in-the-wild/sadtalker/5.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>SadTalker</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/in-the-wild/eamm/5.mov"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>EAMM</p>
+                        </td>
+                        <td>
+                            <video preload="auto"
+                                   src="https://emotalker.s3.amazonaws.com/webpage/in-the-wild/ours/5.mp4"
+                                   type="video/mp4" controls="" width="190"></video>
+                            <p>Ours</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section hero is-light">
+    <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+            <h2 class="title is-3">3D Morphable Faces</h2>
+            <h4 class="title is-5">Different identity texture</h4>
+            <div style="text-align: center;">
+                <table align="center">
+                    <tr>
+                        <td>
+                            <video poster="" autoplay muted loop width="200pt">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/modal/M003-happy-level_3-017_3dmm.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="200pt">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/modal/M009-happy-level_3-017_texture.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="200pt">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/modal/M012-happy-level_3-017_texture.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="200pt">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/modal/W016-happy-level_3-017_texture.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="200pt">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/modal/W023-happy-level_3-017_texture.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+        </div>
+    </div>
+</section>
+
+<!-- Image carousel -->
+<!--<section class="hero is-small">-->
+<!--  <div class="hero-body">-->
+<!--    <div class="container">-->
+<!--      <div id="results-carousel" class="carousel results-carousel">-->
+<!--       <div class="item">-->
+<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--          First image description.-->
+<!--        </h2>-->
+<!--      </div>-->
+<!--      <div class="item">-->
+<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--          Second image description.-->
+<!--        </h2>-->
+<!--      </div>-->
+<!--      <div class="item">-->
+<!--        &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>-->
+<!--        <h2 class="subtitle has-text-centered">-->
+<!--         Third image description.-->
+<!--       </h2>-->
+<!--     </div>-->
+<!--     <div class="item">-->
+<!--      &lt;!&ndash; Your image here &ndash;&gt;-->
+<!--      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>-->
+<!--      <h2 class="subtitle has-text-centered">-->
+<!--        Fourth image description.-->
+<!--      </h2>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+<!-- End image carousel -->
+
+
+<!-- Youtube video -->
+<!--<section class="hero is-small is-light">-->
+<!--    <div class="hero-body">-->
+<!--        <div class="container">-->
+<!--            &lt;!&ndash; Paper video. &ndash;&gt;-->
+<!--            <h2 class="title is-3">Video Presentation</h2>-->
+<!--            <div class="columns is-centered has-text-centered">-->
+<!--                <div class="column is-four-fifths">-->
+
+<!--                    <div class="publication-video">-->
+<!--                        &lt;!&ndash; Youtube embed code here &ndash;&gt;-->
+<!--                        <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0"-->
+<!--                                allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!-- End youtube video -->
+
+<section class="section hero is-light">
+    <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+            <h2 class="title is-3">Free Control by Driven Frames</h2>
+            <div style="text-align: center;">
+                <h2 class="title is-4">Lip Movement Control</h2>
+                <table align="center">
+                    <tr>
+                        <td style="padding-right: 1pt">
+                            <p style="margin-top: 60px;">
+                            <h2 class="title is-5">Reference Lip</h2>
+                            <p>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/lip_ref/andrew_clip_1_short.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/lip_ref/feifeili_clip3_short.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/lip_ref/Obama_clip1_short.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/lip_ref/reagan_clip1_short.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/lip_ref/WDA_000_short.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/lip_ref/M003-angry-level_1-030-ori.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/lip_ref/M003-angry-level_1-030-andrew_clip_1.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/lip_ref/M003-angry-level_1-030-feifeili_clip3.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/lip_ref/M003-angry-level_1-030-Obama_clip1.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/lip_ref/M003-angry-level_1-030-reagan_clip1.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/lip_ref/M003-angry-level_1-030-WDA_000.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                    </tr>
+                </table>
+                <br><br>
+                <h2 class="title is-4">Facial Expression Control</h2>
+                <table align="center">
+                    <tr>
+                        <td style="padding-right: 1pt">
+                            <p style="margin-top: 60px;">
+                            <h2 class="title is-5">Reference<br>Expression</h2>
+                            <p>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/exp_ref/M005-contempt-level_1-020.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/exp_ref/M009-disgusted-level_1-027.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/exp_ref/M012-angry-level_3-023.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/exp_ref/W016-surprised-level_1-006.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/exp_ref/W028-sad-level_1-015.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/exp_ref/M003-angry-level_1-030-ori.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/exp_ref/M003-angry-level_1-030-M005-contempt-level_1-020.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/exp_ref/M003-angry-level_1-030-M009-disgusted-level_1-027.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/exp_ref/M003-angry-level_1-030-M012-angry-level_3-023.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/exp_ref/M003-angry-level_1-030-W016-surprised-level_1-006.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/exp_ref/M003-angry-level_1-030-W028-sad-level_1-015.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                    </tr>
+                </table>
+                <br><br>
+                <h2 class="title is-4">Head Pose Control</h2>
+                <table align="center">
+                    <tr>
+                        <td style="padding-right: 10pt">
+                            <p style="margin-top: 80px;">
+                            <h2 class="title is-5">Reference Pose</h2>
+                            <p>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/pos_ref/andrew_clip_1_short.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/pos_ref/feifeili_clip3_short.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/pos_ref/Obama_clip1_short.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/pos_ref/reagan_clip1_short.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/pos_ref/WDA_000_short.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/pos_ref/M003-angry-level_1-030-ori.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/pos_ref/M003-angry-level_1-030-andrew_clip_1.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/pos_ref/M003-angry-level_1-030-feifeili_clip3.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/pos_ref/M003-angry-level_1-030-Obama_clip1.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/pos_ref/M003-angry-level_1-030-reagan_clip1.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                        <td>
+                            <video poster="" autoplay muted loop width="180">
+                                <source src="https://emotalker.s3.amazonaws.com/webpage/pos_ref/M003-angry-level_1-030-WDA_000.mp4"
+                                        type="video/mp4">
+                            </video>
+                        </td>
+                    </tr>
+                </table>
+                <br><br>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- End video carousel -->
+
+
+<!-- Paper poster -->
+<!--<section class="hero is-small is-light">-->
+<!--    <div class="hero-body">-->
+<!--        <div class="container">-->
+<!--            <h2 class="title">Poster</h2>-->
+
+<!--            <iframe src="static/pdfs/sample.pdf" width="100%" height="550">-->
+<!--            </iframe>-->
+
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+<!--<section class="section" id="BibTeX">-->
+<!--    <div class="container is-max-desktop content">-->
+<!--        <h2 class="title">BibTeX</h2>-->
+<!--        <pre><code>BibTex Code Here</code></pre>-->
+<!--    </div>-->
+<!--</section>-->
+<!--End BibTex citation -->
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <div class="content">
+
+                    <p>
+                        This page was built using the <a
+                            href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic
+                        Project Page Template</a>.
+                        You are free to borrow the of this website, we just ask that you link back to this page in the
+                        footer. <br> This website is licensed under a <a rel="license"
+                                                                         href="http://creativecommons.org/licenses/by-sa/4.0/"
+                                                                         target="_blank">Creative
+                        Commons Attribution-ShareAlike 4.0 International License</a>.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+<!-- End of Statcounter Code -->
+
+</body>
+</html>
